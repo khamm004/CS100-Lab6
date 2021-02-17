@@ -1,8 +1,8 @@
-#include "../header/rectangle.h"
+#include "../header/rectangle.hpp"
 
 #include "gtest/gtest.h"
 
-//--------------Constructor Tests------------------
+
 TEST(Rectangle, ConstructorHeight) {
 	Rectangle* r = new Rectangle(6,8);
 	EXPECT_EQ(r->get_height(),8);
@@ -17,7 +17,7 @@ TEST(Rectangle, ConstructorBigNumber) {
    	EXPECT_EQ(r->get_height(),1000000000); 
 	EXPECT_EQ(r->get_width(),1000000000); 
 }
-//---------------Area Tests--------------------------
+
 TEST(Rectangle, Area) {
     Rectangle* r = new Rectangle(6,8);
     EXPECT_EQ(r->area(),48); 
@@ -32,8 +32,6 @@ TEST(Rectangle, ZeroArea) {
     Rectangle* r = new Rectangle(0,0);
     EXPECT_EQ(r->area(),0); 
 }
-
-//---------------Perimeter Tests-------------------------
 
 TEST(Rectangle, Perimeter) {
     Rectangle* r = new Rectangle(6,8);

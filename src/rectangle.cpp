@@ -1,6 +1,6 @@
 #include "../header/rectangle.hpp"
 
-void Rectangle::Rectangle(int w, int h){
+Rectangle::Rectangle(int w, int h){
         this->width=-1;
         this->height=-1;
 }
